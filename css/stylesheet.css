@@ -1,0 +1,200 @@
+/*
+    purple (light to dark)
+    #b191c3
+    #83489c
+    #905da7
+    #673091
+
+    orange (light to dark)
+    #fecc87
+    #fcae3a
+    #f79320
+    #e1932e
+
+    Temple of Tides 3:38:20 https://www.twitch.tv/videos/1435403857?filter=all&sort=time
+Shards of the Void 2:29:10 https://www.twitch.tv/videos/1276731666?filter=all&sort=time
+Temple of The Elements: Earth 3:42:35 https://www.twitch.tv/videos/1406569209
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+img {
+    vertical-align: middle;
+}
+p, li, a {
+    font: 17x Helvetica, Sans-Serif; 
+}
+hr {
+    margin: 0;
+}
+
+#slideshow-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.description-img {
+    padding: 15px;
+}
+
+
+.two-child {
+    width: 100%;
+}
+@media screen and (min-width: 800px) {
+    .two-pics {
+        display: flex;
+        justify-content: center;
+    }
+    .two-child {
+        width: 50%;
+    }
+}
+
+
+#heading, #about-me {
+    padding: 15px 15px;
+    background-color: rgb(110, 110, 110);
+}
+#early-design, #projects {
+    border-top: 10px solid #e1932e;
+    background-color: rgb(139, 139, 139);
+    padding: 15px 15px;
+}
+#creation-process {
+    border-top: 10px solid #673091;
+    background-color: rgb(110, 110, 110);
+    padding: 15px 15px;
+}
+#finished-product {
+    border-top: 10px solid #e1932e;
+    background-color: rgb(139, 139, 139);
+    padding: 15px 15px;
+}
+#videos {
+    border-top: 10px solid #673091;
+    background-color: rgb(110, 110, 110);
+    padding: 15px;
+}
+@media screen and (min-width: 600px) {
+    #heading, #about-me {
+        padding: 15px 50px;
+        background-color: rgb(110, 110, 110);
+    }
+    #early-design, #projects {
+        border-top: 10px solid #e1932e;
+        background-color: rgb(139, 139, 139);
+        padding: 15px 50px;
+    }
+    #creation-process {
+        border-top: 10px solid #673091;
+        background-color: rgb(110, 110, 110);
+        padding: 15px 50px;
+    }
+    #finished-product {
+        border-top: 10px solid #e1932e;
+        background-color: rgb(139, 139, 139);
+        padding: 15px 50px;
+    }
+    #videos {
+        border-top: 10px solid #673091;
+        background-color: rgb(110, 110, 110);
+        padding: 15px 50px 50px 50px;
+    }
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fcae3a;
+}
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0px;
+    color: #673091;
+}
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0px;
+    color: #fcae3a;
+}
+
+#nick {
+    border: 5px solid #673091;
+    margin: 15px;
+}
+.project-img {
+    border: 5px solid #e1932e;
+}
+.project-img2 {
+    border: 5px solid #673091;
+}
+#project1 { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.project-text { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1% 4%;
+}
+
+@media screen and (min-width: 600px) {
+    .project-text { 
+        font-size: 40px;
+    }
+}
+.video-frame {
+    width: 100%;
+    height: 200px;
+}
+@media screen and (min-width: 600px) {
+    .video-frame {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .video-frame {
+        height: 450px;
+    }
+}
+.demo3 {
+    padding-bottom: 15px;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.0s;
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.5} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0.5} 
+    to {opacity: 1}
+}

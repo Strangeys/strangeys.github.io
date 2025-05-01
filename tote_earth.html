@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Level Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html#about-me">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a>Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                            <li><a href="ender_golf.html">Ender Golf</a></li>
+                            <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                            <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                            <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                            <li><a href="portal2.html">Portal 2 Levels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="NickMalone_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Temple of the Elements: Earth</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/tote_earth/lvl9_3.png" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/tote_earth/lvl1_gray.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/tote_earth/lvl1_done.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/tote_earth/lvl5_draft.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl9_3.png" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl1_gray.png" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl1_done.png" style="width:100%" onclick="currentDiv(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl5_draft.png" style="width:100%" onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+        <p>Teams of 4 must get through puzzles that consist of parkour and redstone all while having a primary mechanic of them turning into blocks when holding shift. This mechanic will bring players up to elevated areas and force people to go back and forth to bring a player to the exit portal. This project was part of a Twitch Rivals Minecraft minigames event. Temple of the Elements had different themes for each iteration with this one focused on Earth as a puzzle minigame. </p>
+    </div>
+    <div id="early-design">
+        <h2>Design Choices</h2>
+        <p>Puzzles were split into separate levels with increasing difficulty and gradually introducing more mechanics while reinforcing the primary mechanic of requiring players to turn into a block and help their teammates reach the portal. Twitch gave us a 20 minute time slot for running this puzzle mini game which is the reason we ended up making only 10 levels. The solutions aren’t hidden or require the players to go searching for it. The pathing, colors, and lighting helped guide teams to the portal and didn’t throw any curveballs to try confusing them. With the timer being a factor, the last thing we want is for someone to get stuck.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 1 Draft" src="images/tote_earth/intro_concept.png" style="width: 50%"/>
+            <img class="description-img two-child" alt="Trajectory" src="images/tote_earth/concept2.png" style="width: 50%"/>
+        </div>
+        <p>A lot of our time spent on this project was discovering the many ways we can utilize the concept of a player turning into a block. Players can’t turn into a block in mid air or on top of another player’s block, so there’s limitations on what we can do. We didn’t want players to always be left behind in the puzzles so if a solution required someone to sacrifice and stay behind, the puzzle would be short enough where it wouldn’t cause an issue. There’d be some levels where the left behind player can still control the level’s redstone contraptions to guide the players further.</p>
+    </div>
+    <div id="creation-process">
+        <h3>Creation Process</h3>
+        <img class="description-img" alt="Level 8 Testing" src="images/tote_earth/play_test.png" style="width: 70%; float: right;"/>
+        <p>Our mini-scale layouts were designed to be play tested early on before determining if the puzzle is ready to be scaled up to a bigger version which will make the levels feel exciting and for the spectators to have plenty of space to work with. Plenty of concepts were made and scrapped, even some that were finished didn’t make the cut for the final 10 levels. </p>
+        <p>The final level is supposed to surprise the players if they reach it before the timer hits. It consists of 4 levers which count towards your score and each level is at the end of a puzzle which takes elements of previous puzzles. The biggest catch with the final level is that there is an invulnerable boss that causes an earthquake. Players will die if they don’t turn into a block to avoid the damage and with this, some areas prevent players from turning into a block and can set them back a bit.</p>
+        <img class="description-img" alt="Level 10 graymap'd section" src="images/tote_earth/lvl10_1.png" style="width: 100%"/>
+        <img class="description-img" alt="Level 10 completed" src="images/tote_earth/lvl10.png" style="width: 100%"/>            
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>We were able to compile 10 of our best levels to showcase in the event which turned out well. Nearly half of the teams made it to the final level before the timer expired which is right about where we wanted, especially knowing that a lot of teams had casual players who may not be well versed with Minecraft mechanics. It provided great moments on the livestream and an exciting finish for those who made it to the boss room competing for the most levers in the fastest time for a higher placement. </p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/tote_earth/lvl2_3.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/tote_earth/lvl3_1.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/tote_earth/lvl4_1.png" style="width:100%">
+            <img class="mySlides3 fade" id="img3" src="images/tote_earth/lvl6_1.png" style="width:100%">
+            <img class="mySlides3 fade" id="img4" src="images/tote_earth/lvl7_1.png" style="width:100%">
+            <img class="mySlides3 fade" id="img5" src="images/tote_earth/lvl8_1.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl2_3.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl3_1.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl4_1.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl6_1.png" style="width:100%" onclick="currentDiv3(4)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl7_1.png" style="width:100%" onclick="currentDiv3(5)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_earth/lvl8_1.png" style="width:100%" onclick="currentDiv3(6)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <p>Jump to 3:42:30 in the Twitch VOD.</p>
+        <iframe
+            src="https://player.twitch.tv/?video=v1406569209&parent=people.rit.edu"
+            class="video-frame"
+            allowfullscreen>
+        </iframe>
+        <p>Player POV</p>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/sSgNA7HfNyE?start=10327" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>

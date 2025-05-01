@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Level Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html#about-me">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a>Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                            <li><a href="ender_golf.html">Ender Golf</a></li>
+                            <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                            <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                            <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                            <li><a href="portal2.html">Portal 2 Levels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="NickMalone_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Temple of Tides</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/tote_water/temple_of_tides.png" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/tote_water/center_draft1.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/tote_water/ice_dungeon_start_draft.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/tote_water/moss_jump.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_water/temple_of_tides.png" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_water/center_draft1.png" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_water/ice_dungeon_start_draft.png" style="width:100%" onclick="currentDiv(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/tote_water/moss_jump.png" style="width:100%" onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+        <p>Teams of 4 must defeat mobs for coins and deposit them into the whirlpool at the center to see who comes out with the most in 20 minutes. Players are given riptide tridents to launch themselves to elevated areas and defeat custom mobs. The dungeon is split into 3 areas, each with their own boss which gives a coin multiplier when defeated. Defeating all bosses will activate mayhem mode which continuously spawns mobs in the center whirlpool at the highest coin multiplier. This project was a part of a Twitch Rivals Minecraft minigames event. Temple of the Tides is a continuation of the Temple of the Elements series with this one focused on trident movement and PvE.</p>
+    </div>
+    <div id="early-design">
+        <h2>Early Design Struggles</h2>
+        <p>There were a bunch of ideas on how the dungeon should be laid out and part of that depended on how much time teams had to complete the dungeon for the event. Usually 45 minutes was given for each minigame, but ours was given 20 minutes so it forced us to scrap some things and start from scratch after hearing that news a week in. At one point, we thought of a fully linear dungeon that teams go through together, but we didn’t want to restrict player movement and instead let them split up. We eventually wanted 4 unique areas for the dungeon and to have each area consist of 15 rooms linked with checkpoints after every 5 to return to the middle and deposit coins.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 1 Draft" src="images/tote_water/early_concept.png" style="width: 50%"/>
+            <img class="description-img two-child" alt="Trajectory" src="images/tote_water/center_draft.png" style="width: 50%"/>
+        </div>
+        <p>We ended up deciding on 3 areas instead of 4. We also scrapped the 15 room concept and just made each area unique in its own way. A lot of this came down to late decision making and knowing we had a small time frame to complete this, especially with some builders having other matters to attend to. There’s also a halfway checkpoint for each dungeon and one before the boss area which will give players a fast way back if defeated. The checkpoints connect to the central hub with the whirlpool and have waterfalls come from them to display that they’re unlocked.</p>
+    </div>
+    <div id="creation-process">
+        <h3>The 3 Dungeons</h3>
+        <p>The Moss Dungeon matches the original concept the closest with it being a chain of rooms connected by caves. A bunch of boxes were made with a connection before turning it into a giant cave system. Ponds and rivers are scattered throughout to give fast options for players to take with the riptides. There’s even a section with floating water spheres which players must hop through to proceed further. The boss room had lily pad islands with a giant slime splitting up and merging back together.</p>
+        <img class="description-img" alt="Level 8 Testing" src="images/tote_water/moss_early.png" style="width: 100%"/>
+        <p>The Pirate Dungeon gives more room for the player to explore and presents the final destination immediately with how the pirate ship is framed upon entering the dungeon. A giant cave needed to fit our pirate ship so it was decided to have 3 different elevation areas to split up the cave’s gameplay. The boss is a flying ghast with special fireball shooting to present a challenge to players to achieve the coin multiplier. Most of the level has water for easy navigation and can be used to help defeat the boss when it goes low.</p>
+        <img class="description-img" alt="Level 10 graymap'd section" src="images/tote_water/pirate_draft.png" style="width: 100%"/>
+        <p>The Ice Dungeon is a bit linear with how the castle is designed to follow a set path throughout. While we didn’t want to have a completely linear area, our time constraint on building forced us to do so. There are special movement areas to get through with the ice themed mobs to slow the players down. The boss is a pillager mage with projectile abilities where you fight on the highest point of the castle. </p>
+        <img class="description-img" alt="Level 10 completed" src="images/tote_water/ice_castle_draft.png" style="width: 100%"/>            
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>A massive crunch was needed in the final days to finish the map as I was the only one available to build in the final week. We were able to acquire help from an aesthetic builder to skin a lot of the gray mapped areas such as the ice castle. Overall, the game played well with some teams defeating all of the bosses and unlocking mayhem mode. It created an intense atmosphere with the coin deposit messages showing each teams’ progress and streamers pulling off risky plays to get as many coins as they could at the last second. The project turned out to be very different than we first envisioned as the 20 minute timer meant we couldn’t make anything on a grand scale but that may have been a good thing with how we were just able to squeak by.</p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/tote_water/moss.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/tote_water/pirate_area.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/tote_water/ice_castle.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_water/moss.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_water/pirate_area.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/tote_water/ice_castle.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <p>Jump to 3:38:20 in the Twitch VOD.</p>
+        <iframe
+            src="https://player.twitch.tv/?video=v1435403857&parent=people.rit.edu"
+            class="video-frame"
+            allowfullscreen>
+        </iframe>
+        <p>Player POV</p>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/yPQSOHr6gnQ?start=7841" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>

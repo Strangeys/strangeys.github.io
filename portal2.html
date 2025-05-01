@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Level Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html#about-me">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a>Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                            <li><a href="ender_golf.html">Ender Golf</a></li>
+                            <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                            <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                            <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                            <li><a href="portal2.html">Portal 2 Levels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="NickMalone_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Portal 2 Levels</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/portal2/lvl1.jfif" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/portal2/lvl2.jfif" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/portal2/lvl3.jfif" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/portal2/lvl1.jfif" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/portal2/lvl2.jfif" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/portal2/lvl3.jfif" style="width:100%" onclick="currentDiv(3)">
+                </div>
+            </div>
+        </div>
+        <p>As part of my Level Design 1 class, we had a project to create 3 puzzle levels within Portal 2’s in-game editor. The levels are supposed to revolve around a primary mechanic that gets introduced to the player, which then gets reinforced in the next level and applies a twist to it in the 3rd level. The primary mechanic I chose was the excursion tunnel and using it to transport objects which is introduced late in the single player campaign. These levels assume players have knowledge of other mechanics that were introduced before it.</p>
+    </div>
+    <div id="early-design">
+        <h2>Early Design</h2>
+        <p>The first level is fairly simple and has a cube dispenser over water. The player needs to use portals to lead the excursion tunnel under the dispenser to catch the cube. Once the cube is caught, it will move closer to a wall where you’ll need to make another portal connection to lead the cube perpendicular back to land in order to complete the level.</p>
+        <img class="description-img" alt="Level 1" src="images/portal2/room1.png" style="width: 100%"/>
+        <p>The second level has the excursion tunnel connecting to the exit, but it is going in the wrong direction. The player needs to get to the platform before the turrets and use the excursion tunnels to push them off so they can proceed to the receptacle and place the cube on it. The cube will reverse the direction of the excursion tunnel, allowing the player to finally get to the exit.</p>
+        <img class="description-img" alt="Level 2" src="images/portal2/room2.png" style="width: 100%"/>
+        <p>The third level is the most complex and requires knowledge of the bouncy gel and the velocity that players can get with height and portals. Players must get the cube onto the button to make the excursion tunnel reversed. This will allow you to pull the dispensed blue gel to your portal and allow you to drop it on the middle platform after taking off the cube from the receptacle. From there, the player can use the excursion tunnel to give enough height to do a long jump with the bouncy gel to propel them to the other side. The final part requires the player to reset the cube and place it back to the receptacle so that it can pull them across to the exit.</p>
+        <img class="description-img" alt="Level 3" src="images/portal2/room3.png" style="width: 100%"/>
+    </div>
+    <div id="creation-process">
+        <h3>Creation Process</h3>
+        <p>Portal 2 has an in-game editor which makes it easy to set up levels. Everything snaps to a grid which can help a lot but it's also limited to test chamber content. That means you can’t create anything similar to the 2nd half of the campaign with terrain and broken structures unless you go into the Hammer editor (which can also help connect levels in a sequence). Each puzzle needed to be its separate level for this to work with the in-game editor.</p>
+        <img class="description-img" alt="Outside View" src="images/portal2/editor.webp" style="width: 100%"/>
+        <p>Some levels required more space than what I originally envisioned in the drawings. A lot of this had to do with it feeling cluttered with it being its original size and some sight lines being blocked in the second level which could make things confusing to solve. The white walls were switched up in some areas and in some areas there are more walls to work with. Playtesters suggested some better lighting and some slight tweaks to platforms which were done for the final version.</p>
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>The puzzles were completed and fulfilled the goal of the 3-step sequence needed for the project. Each level had a rise in difficulty and more mechanics to surround the primary mechanic of the excursion tunnel. The amount of space used worked out well and didn’t feel too small or too big for the puzzles. Lighting could be improved, but the editor is very restrictive on light sources which makes it difficult.</p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/portal2/lvl1gp.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/portal2/lvl2gp.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/portal2/lvl3gp.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/portal2/lvl1gp.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/portal2/lvl2gp.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s4">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/portal2/lvl3gp.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/0RVhAbFnPIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Level Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html#about-me">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a>Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                            <li><a href="ender_golf.html">Ender Golf</a></li>
+                            <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                            <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                            <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                            <li><a href="portal2.html">Portal 2 Levels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="NickMalone_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Ender Golf</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/endergolf/hole1.png" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/endergolf/hole2_testing.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/endergolf/hole9_testing.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/endergolf/hole6_testing.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/endergolf/hole1.png" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/endergolf/hole2_testing.png" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/endergolf/hole9_testing.png" style="width:100%" onclick="currentDiv(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/endergolf/hole6_testing.png" style="width:100%" onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+        <p>Players must make their way to the hole by shooting ender pearls with a bow. There are 9 holes, each with their own obstacles and shortcuts to provide unique gameplay for those who want to play casually or even speedrun. The “green” is actually ice which gives less friction for players when they hit the ground. The sand is soul sand which will force your next shot to be far less powerful. Landing in the water or void will reset your shot and add a stroke.</p>
+    </div>
+    <div id="early-design">
+        <h2>Early Design</h2>
+        <p>There was a previous iteration of Ender Golf that was used in Twitch Rivals and we wanted to make some gameplay changes to better suit a public gameplay experience and for map improvements. Each hole required you to go straight and get the maximum velocity with your bow to get the most distance as the holes were hundreds of blocks long. The map creation process was very long for the previous builders and also needed to be easier.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 1 Draft" src="images/endergolf/hole1_draft.png"/>
+            <img class="description-img two-child" alt="Trajectory" src="images/endergolf/trajectory.png"/>
+        </div>
+        <p>The new 9-hole course features more twists and turns, height variations and an overall downscale of the maps making it easier to create the holes within a 1 month time frame. One of the biggest issues with creating the layouts was understanding how far the shots would go and what their arcs would be. I was able to ask a developer to create a way to mark previous shots as particle trails which would help me determine the ideal paths for players to take with their shots.</p>
+        <p>Both drawings and mini-scale layouts were created of various holes before scaling them up into graymaps. Particle trails would be created to mark the intended paths both on the mini and to-scale layouts.</p>
+    </div>
+    <div id="creation-process">
+        <h3>Creation Process</h3>
+        <img class="description-img" alt="Hole 4 Draft" src="images/endergolf/hole4_draft.jpg" style="width: 60%; float: right;"/>
+        <p>Most holes expect users to use full powered shots to get maximum distance. When scaling up a layout, I’d use the max distance to give a rough scale of how paths would pan out. Hazards would be placed around paths and sometimes on the max distance shots to require players to not shoot at 100% power constantly. These could be sand traps or blocked sightlines to other paths.</p>
+        <p>Hole 4 was a volcano theme and had 3 paths to get to the hole, each with its own risk and reward. The right path could get a Par 4 and has very little ways to get caught in a sand trap. The left path requires more precise shots with sand traps surrounding the islands of grass around it. The middle path is essentially hidden and requires a precise arc and power level to land on a podium which lines up for a hole-in-2.</p>
+        <img class="description-img" alt="Hole 4 Draft" src="images/endergolf/hole4_testing.png" style="width: 100%"/>
+        <img class="description-img" alt="Hole 4 Draft" src="images/endergolf/hole4.png" style="width: 100%"/>            
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>8 of the 9 holes were all gray mapped by myself. We had other builders working on this project who focused on aesthetics once the gray maps were complete. My focus on aesthetic work came with the landscaping to avoid situations where players could get stuck and to make sure it provided clean sight lines to shoot from. The public launch was a major success and had a good player retention, especially for players wanting to get on the leaderboards for fewest strokes and shortest time. </p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/endergolf/hole8_2.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/endergolf/hole9.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/endergolf/hole6.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/endergolf/hole3_1.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/endergolf/hole8_2.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/endergolf/hole9.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/endergolf/hole6.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/endergolf/hole3_1.png" style="width:100%" onclick="currentDiv3(4)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/6YSHVfSHZH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/nFhvt8tNXkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Level Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html#about-me">About Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a>Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                            <li><a href="ender_golf.html">Ender Golf</a></li>
+                            <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                            <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                            <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                            <li><a href="portal2.html">Portal 2 Levels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="NickMalone_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Shards of the Void</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/shards_of_the_void/twitch2.png" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/shards_of_the_void/sideview.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/shards_of_the_void/pirate.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/shards_of_the_void/final.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/twitch2.png" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/sideview.png" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/pirate.png" style="width:100%" onclick="currentDiv(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/final.png" style="width:100%" onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+        <p>Teams of 4 must collect the most shards in a giant PvE map within 45 minutes. There are 4 areas each with 10 shards which must be collected before advancing further down the depths of the lane. Shards can be collected from various tasks such as trading, mining in hazardous areas, killing a special mob or a wave of mobs, and a bunch scattered in the dungeon at the end of each area. After clearing all 40 shards, players will spawn in an arena and go through raids of mobs to collect more shards to help determine the placement of each team throughout the event. This project was a part of a Twitch Rivals Minecraft minigames event. </p>
+    </div>
+    <div id="early-design">
+        <h2>Early Design</h2>
+        <img class="description-img two-child" alt="Original mini map" src="images/shards_of_the_void/minimap.png" style="width: 50%; float: right;"/>
+        <p>Shards of the Void takes inspiration from Complete The Monument (CTM) maps which are giant custom PvE maps made in the Minecraft community. The goal for CTM maps is to collect the ~16 colored wool each within a different dungeon with increasing difficulty over time. The map itself also takes inspiration from Race for Wool (RFW) which consists of 2 mirrored lanes where teams can bow and cannon each other while trying to complete the 3 wool dungeons the fastest. Those lanes would range from being 5-20 blocks wide and a couple hundred blocks long, while taking up a lot of space vertically.</p>
+        <p>Around the time this project came out, the height limit in minecraft got increased drastically and the Deep Dark update was approaching which would come with the new boss, the Warden. We wanted to fit this map within the 384 blocks of vertical height and provide unique areas which could also lead up to a final area that includes content from the upcoming update that was somehow within the game’s files at the time. Each area was given the same amount of space and always had a final dungeon at the far end of the lane which had most of the shards located. Shards could be seen through walls so players don’t get stuck searching for them and instead understand the general direction and fight through mobs to get there.</p>
+        <img class="description-img two-child" alt="Shards spread out concept" src="images/shards_of_the_void/shards_concept.png" style="width: 100%"/>
+    </div>
+    <div id="creation-process">
+        <h3>Creation Process and Changes</h3>
+        <p>We ended up scrapping the 5th area because it was going to be themed as a stronghold but that dungeon would be too similar to what was in the 3rd area’s jungle temple. Instead, we had players drop into the bottom of the lane and enter a teleporter into a gigantic arena which would spawn waves of enemies and give a shard at the end of each one. This was done as we didn’t believe players might be able to finish the 5th area within 45 minutes and instead had it so that once they finish the 4th, they will enter a non-stop onslaught of enemies to add to their score. If teams were able to finish the 5th area originally, there was nothing else for players to do which is why we also swapped to an endless mode for the final area.</p>
+        <img class="description-img" alt="Gray map side view" src="images/shards_of_the_void/full_gray_map.png" style="width: 100%"/>
+        <p>Play testing took a lot of time to get right. Plenty of spawners and custom mobs needed to be changed, shard locations, and some layout changes were needed to help guide players. Players only have a small amount of text before the game starts to understand what to do and for a $50,000 event, we want to make sure things are easy to understand quickly so they don’t get stuck and confused while others breeze by. The streamers consist of various skill sets so we couldn’t have a super difficult challenge or something that can be speedrun quickly.</p>
+        <img class="description-img" alt="Level 3 beehive area" src="images/shards_of_the_void/lvl3.png" style="width: 100%"/>
+        <p>Bedrock would be needed in various areas to prevent players from tunneling throughout dungeons so that we force PvE interaction and no “cheese” strategies. The lane is mirrored across the void to also give players an idea of what the area’s layout looks like and where the shard locations are at too. We wanted to make sure dying wouldn’t be frustrating, so all items would be stored in chests upon dying and it would be blast proof so that creepers can’t blow it up. A default kit is applied within spawning and beds are given to let players have forward spawns further into the area as well.</p>
+        <img class="description-img" alt="Bedrock layer behind glass" src="images/shards_of_the_void/bedrocking.png" style="width: 100%"/>            
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>This was a major success especially for it being a completely new group of builders, developers and managers coming together compared to previous Twitch Rivals events. A lot of streamers and viewers found this game to be one of the most interesting minigames that the event had and it provided a lot of great content with clutch plays of streamers getting shards or evading hundreds of mobs to reach the end. For me personally, this was the first time building in the most up-to-date version of the game and I was able to learn a bunch of new tools for landscaping and other WorldEdit commands to get the project done. I was responsible for a bunch of building and layout work on the first 3 levels while also making the final area structures. </p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/shards_of_the_void/twitch3.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/shards_of_the_void/twitch4.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/shards_of_the_void/twitch5.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/shards_of_the_void/twitch6.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/twitch3.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/twitch4.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/twitch5.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/shards_of_the_void/twitch6.png" style="width:100%" onclick="currentDiv3(4)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <p>Jump to 2:29:00 in the Twitch VOD.</p>
+        <iframe
+            src="https://player.twitch.tv/?video=v1276731666&parent=people.rit.edu"
+            class="video-frame"
+            allowfullscreen>
+        </iframe>
+        <p>Player POV</p>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/7WHnQSgqQ6g?start=6176" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>

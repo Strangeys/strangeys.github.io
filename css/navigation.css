@@ -61,8 +61,7 @@
 #nav-bar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
     padding: 2px 0%;
     background-color: #673091;
 }
@@ -80,7 +79,6 @@
 ul {
     padding: 0;
     list-style: none;
-    width: 130px;
 }
 ul li {
     display: block;
@@ -113,7 +111,7 @@ ul li:hover ul.dropdown {
 }
 @media screen and (min-width: 600px) {
     ul {
-        width: 150px;
+        width: 250px;
     }
     ul li a {
         font-size: 18px;
@@ -121,7 +119,7 @@ ul li:hover ul.dropdown {
 }
 @media screen and (min-width: 940px) {
     ul {
-        width: 250px;
+        width: 400px;
     }
     ul li a {
         font-size: 18px;

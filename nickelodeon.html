@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Game Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <ul>
+                <li>
+                    <a>Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="sonic.html">Minehut Sonic Racing</a></li>
+                        <li><a href="nickelodeon.html">Nickelodeon Minehut Challenge Series</a></li>
+                        <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                        <li><a href="ender_golf.html">Ender Golf</a></li>
+                        <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                        <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                        <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                        <li><a href="portal2.html">Portal 2 Levels</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Nickelodeon Minehut Challenge Series</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/nick/escape/lobby1.png" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/nick/archery/zone1_proto.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/nick/golf/avatar_proto2.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/nick/escape/escape_drafts.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/nick/escape/lobby1.png" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/nick/archery/zone1_proto.png" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/nick/golf/avatar_proto2.png" style="width:100%" onclick="currentDiv(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/nick/escape/escape_drafts.png" style="width:100%" onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+        <p>Super League Gaming asked me to help design 3 different minigames in a collaboration with Nickelodeon. The event was a 9-week takeover of the Minehut lobby where minigames were cycled every week and got a new update each time while including limited time cosmetics and a grand prize of a slime themed PC to those who participate and get the best scores. The 3 minigames were Archery, Escape, and Golf. I’ve previously worked on Minehut Golf and will cover less about the game on this page as you can find more info <a href="ender_golf.html">here</a>. Over 4 months were spent on this project.</p>
+    </div>
+    <div id="early-design">
+        <h2>Early Design and Brand Restrictions</h2>
+        <p>A ton of meetings were scheduled early on in order to have the team gather as much info from the client as possible while providing quick questions and answers to get started early without needing to redo anything. Nickelodeon provided us with a bunch of reference images and a private style guide to stick to and had specific shows that they wanted highlighted in the event. We created our own art boards (right below) and documents with important info on the shows, highlighting iconic places or objects that we could incorporate into the 3 games. There were also things we absolutely couldn’t do in order to not get in trouble with Minecraft’s EULA like creating giant models of Nickelodeon characters with blocks as it would be considering “building a brand” out of Minecraft blocks.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="IRL Nickelodeon reference images" src="images/nick/splats.png"/>
+            <img class="description-img two-child" alt="Figma image board" src="images/nick/figma.png"/>
+        </div>
+        <p>We also found out that rather than directing players to a different server to play the minigames, they had to remain in the same world and meshed into the lobby build that all players connect to in order to maximize interactions. This came as a surprise and forced 3 entirely new lobbies to be made alongside each game which tightened the schedule. Each lobby was designed to bring attention to the minigame and Nickelodeon branding to get players playing as well as serving a normal lobby’s purpose to direct players to other Minehut servers as well.</p>
+        <h2>Archery Development</h3>
+        <p>Archery was a minigame that was used in a previous Twitch Rivals event that was well received. Run around a map and use your bow to shoot stationary targets. The core gameplay loop however felt awkward and had a lot of downtime with issues of drawing back a bow and vanilla movement mechanics. Many concepts came to mind, including adding movement specific to each zone such as dashing, leaping, grappling, rocketing and hovering.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Archery Layout Draft 1" src="images/nick/archery/ArcheryConceptLayout1.png"/>
+            <img class="description-img two-child" alt="Archery Layout Draft 2" src="images/nick/archery/ArcheryConceptLayout2.png"/>
+        </div>
+        <p>Instead of overcomplicating things, we kept it simple with a dash mechanic and allowing players to reach higher distances by jumping on slime scattered around the zones. Rather than pulling a bow, you just have to right click an item that acts as a railgun which has a maximum distance forcing players to move around rather than standing still and shooting from 100 blocks away. As the number of “zones” was also highly debated, we went with 3 unique areas to lower the building restraints in the already tight schedule that we had. Rather than requiring a certain amount of targets to be destroyed to move onto the next zone, each one has a 1 minute time limit so that everyone has a chance to experience each zone equally and contain enough targets that they can’t run out before the switch.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Archery Layout Draft 1" src="images/nick/moodboard1.png"/>
+            <img class="description-img two-child" alt="Archery Layout Draft 2" src="images/nick/moodboard2.png"/>
+        </div>
+        <p>Archery focused more on the Nickelodeon brand itself rather than the IPs and thus we took a look at a bunch of their IRL set designs seen in Kids Choice Awards and their Nick Hotel resort. The three themed zones were decided to be an amusement park, an arcade and a mosh pit. The amusement park was placed front and center in front of the lobby with a large entrance archway, slime fountain behind with the Minehut logo and a giant ferris wheel to bring in a bunch of attention to the area for players to get interested. The amusement park was an open area zone to get players used to dashing and noticing targets. The arcade zone involved more verticality and forced players to use slime to jump high and explore the many large arcade machines. The mosh pit zone had a lot of structures in the way forcing way more movement than any other zone and was to be the most challenging of them all.</p>
+        <h2>Escape Development</h3>
+        <img class="description-img two-child" alt="Archery Layout Draft 1" src="images/nick/escape/EscapeLayoutConcept1.png" style="width: 50%; float: right;"/>
+        <p>“Escape” was originally envisioned as an escape room but we realized that the replayability for that could be very bad and be essentially a solved game. We needed to pivot and came up with numerous ideas. A big one that was planned was turning this into a mob dungeon but even that idea got shot down quickly because tying a game like that into the Nickelodeon brand would cause a bunch of issues. We ended up going with a party game route and turned it into a randomized set of rooms that don’t take long to complete. These rooms consist of puzzles, parkour, surviving, etc.</p>
+        <p>In order for Escape to be fun and have replayability, we needed to conceptualize as many rooms as possible. We broke down all ideas into 5 categories: Puzzle, Collect, Move, Survive, and Miscellaneous. Each category would end up with 8 rooms each. Rooms needed to have brand and IP variety and thus we built themed rooms that went with the type of minigame. Ex. Survive from the Hash Slinging Slasher in a Spongebob Squarepants themed room. All concepts needed to be easy to understand as we didn’t want any players stuck for long periods of time as this was supposed to be a fast paced mode. We had to come up with mini-layouts early on to provide to clients and detail what each game would be and you can see below what that looked like.</p>
+        <img class="description-img" alt="40 Room Mini Layouts" src="images/nick/escape/Screenshot_2023-10-01_at_11.13.34_AM.png" style="width: 100%"/>            
+        <h2>Golf Development</h3>
+        <p>Golf was an established game through Minehut but we still had to come up with a brand new 9-hole course. Each hole would be themed around a specific Nickelodeon IP with the exception being a holiday themed hole. As 2 more updates would come to Golf after the Week 2 launch, we had to come up with something that wasn’t creating more build work for the team. The idea was to add a slime collection score and a double-shot that allows the player to shoot while in the air moving that will not add a stroke for each hole. This would force players to explore the golf courses more in different routes and the double-shot can reduce the minimum strokes by 1 or more depending on the level. Not much time was needed to finalize details on what we wanted to create and we were able to get working on building early on as this would take the most time to create in-game.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 1 Draft" src="images/nick/golf/hole1_layout.png">
+            <img class="description-img two-child" alt="Hole 5 Draft" src="images/nick/golf/tmnt_proto2.png"/>
+        </div>
+    </div>
+    <div id="creation-process">
+        <h3>Creation Process</h2>
+        <p>Each zone has a specific starting point but there’s no linear path to follow and encourages players to explore each zone and discover their most efficient routes in order to hit as many targets as possible in the allotted time. Zone 1’s amusement park is more flat and wider than the others allowing easier movement for the dash mechanic and more open targets for players to have an easier time. Different ideas came up for making the targets unique so that they’re not all stationary and we discovered that the more movement there is, the more frustrating it can be for casual players. Any movable targets would follow a fixed path and be easy to predict with their speed not going so fast. Zone 1 would be the centerpiece of the lobby and needed to grab players’ attention, so the overall layout of this theme park including the entrance, fountain, and ferris wheel had to be lined up in a way to frame something players get hooked into.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Zone 1 Greymap" src="images/nick/archery/zone1_grey.png"/>
+            <img class="description-img two-child" alt="Zone 1 Greymap Progress" src="images/nick/archery/lobbyPOV.png"/>
+        </div>
+        <p>Zones 2 and 3 were created a lot later due to us fleshing out movement mechanics and target prototyping in Zone 1. More verticality and cover would be added to these levels and thus the zones would be a bit smaller. Zone 2’s arcade had all of the machines supersized with the only ways up are by using the slime jump pads scattered all over the floor. Targets would be located inside the machine screens, on air hockey tables, control pads, etc. Players would need to utilize the dashing to get between the tops of each machine and reach other jump pads faster to reach new targets. </p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Zone 2 Greymap" src="images/nick/archery/zone2_layout.png"/>
+            <img class="description-img two-child" alt="Zone 2 Greymap Progress" src="images/nick/archery/zone2_layout3.png"/>
+        </div>
+        <p>Zone 3’s mosh pit was a giant vertical level with tons of jump pads and bridges that required the most movement with so much cover in the way of things as well as the railgun only reaching so far. The theme made it very easy for us to greymap and skin in the tight schedule which allowed us more time to focus on testing target layouts and continuing work on other minigames. We initially tested a very rough layout with tons of cover and platforms, but we realized that we would later need a bigger centerpiece and better visibility on where you can go, so we had to redo the layout while taking many existing elements. The numbers you see on the 2nd picture here would be used as a reference for other builders to skin certain areas based on reference images.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Zone 3 Greymap" src="images/nick/archery/zone3_layout.png"/>
+            <img class="description-img two-child" alt="Zone 3 Greymap Progress" src="images/nick/archery/zone3_ref.png"/>
+        </div>
+        <h3>Escape Creation Process</h3>
+        <p>Escape was saved for the last released gamemode due to how many rooms were needed to be created and this gave us more time to create the rest when Archery and Golf got cycled back into the weekly rotation for their updates. We decided to shorten the amount of rooms based on how many of the concepts that were finished didn’t feel fun or good for replayability. The first release would have 18 rooms at launch and you are randomly assigned 5 to play so that you have a 2-3 minute playthrough. With cosmetic rewards for multiple runs, this would force new rooms on players making them understand that there’s more to play than what was shown and can increase overall play time. The next update to the game would cycle out some rooms based on data of room play times and we’d introduce a batch of 10 new ones. The final update would be a set of the 7 best rooms in the same order and would encourage speed running leaderboards to help with the PC giveaway.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Bubble Jump greymap" src="images/nick/escape/bubblejump_proto3.png"/>
+            <img class="description-img two-child" alt="Bubble Jump finished" src="images/nick/escape/bubblejump1.png"/>
+        </div>
+        <p>For some reason, Escape didn’t use Trello cards for each room and instead used a Discord forum with each thread being a different room. Initial screenshots of prototypes would be posted with reference images for other builders to skin the room and have dev notes for any bugs or feature requests. These rooms would require a lot of testing internally with plenty of other people invited as having over 25 total rooms with different objectives was going to inevitably lead to a bunch of bugs to fix.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Slime Bounce greymap" src="images/nick/escape/bounce_proto.png"/>
+            <img class="description-img two-child" alt="Slime Bounce finished" src="images/nick/escape/bounce.png"/>
+        </div>
+        <h3>Golf Creation Process</h3>
+        <p>Balancing out the work load between 3 game modes was going to be rough especially with how much iteration is needed to create golf courses if you’ve looked at my previous Ender Golf project. In order to not fully commit my time to one mode, I needed to train another person to help create full size greymaps of the courses. I’d walk through all the steps and document the process of creating the simpler holes and what challenges will occur with the introduction of the double-shot ball. Small things like slopes and what structures or terrain block angles would be directly pointed out and it allowed our other builder to create a couple greymaps themselves. Newer development tools were added to assist us in creating the massive terrain maps which had us creating each hole at a more efficient pace.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 3 terrain with parameters" src="images/nick/golf/hole3_before.png"/>
+            <img class="description-img two-child" alt="Hole 3 terrain after parameters" src="images/nick/golf/hole3_after.png"/>
+        </div>
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>While some original creative visions had to be cut due to time or development, we were able to release the 3 games with updates to each after a 3-week cycle and the client was very pleased with the results as KPIs far exceeded expectations. Most of my time had to be spent on creating design documents early on while drafting prototypes of Archery and Escape. Archery’s lobby setup and Zone 1 greymap were handled by me. Escape had multiple rooms drafted by myself for the final product after pivoting away from the original dungeon escape vision. Golf had 6 of the 9 holes drafted by myself while incorporating the lobby into the 1st hole too.</p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/nick/escape/bluesclues.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/nick/archery/zone2_cave1.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/nick/golf/spongebob6.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/nick/archery/zone1_top.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/nick/escape/bluesclues.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/nick/archery/zone2_cave1.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/nick/golf/spongebob6.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/nick/archery/zone1_top.png" style="width:100%" onclick="currentDiv3(4)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/vZafD1snwDU?si=uIIo4oDX03Y0gTde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/qgxWIFBV-T8?si=H0nqc00y6N_23HyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/dARFHnSys4U?si=veET3A-kv3wMJkqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/IrYcRdepybQ?si=vsJmzxrq82ocqN8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>

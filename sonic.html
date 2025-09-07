@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div id="title">
+            <div id="title-pic">
+                <a href="index.html">
+                    <img id="logo" alt="logo" src="images/logo.png">
+                </a>
+            </div>
+            <div id="title-text">
+                <p id="name">Nick Malone</p>
+                <hr>
+                <p id="role">Game Designer</p>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <ul>
+                <li>
+                    <a>Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="sonic.html">Minehut Sonic Racing</a></li>
+                        <li><a href="nickelodeon.html">Nickelodeon Minehut Challenge Series</a></li>
+                        <li><a href="wingman.html">CSGO Wingman Level</a></li>
+                        <li><a href="ender_golf.html">Ender Golf</a></li>
+                        <li><a href="temple_of_tides.html">Temple of Tides</a></li>
+                        <li><a href="tote_earth.html">Temple of the Elements: Earth</a></li>
+                        <li><a href="shards_of_the_void.html">Shards of the Void</a></li>
+                        <li><a href="portal2.html">Portal 2 Levels</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Minehut Sonic Racing</h1>
+        <hr>
+        <div id="slideshow-container">
+            <img class="mySlides fade" id="img0" src="images/sonic/tokyo6.png" style="width:100%">
+            <img class="mySlides fade" id="img1" src="images/sonic/london_proto2.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/sonic/forest_proto4.png" style="width:100%">
+            <img class="mySlides fade" id="img2" src="images/sonic/lobby1.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/sonic/tokyo6.png" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/sonic/london_proto2.png" style="width:100%" onclick="currentDiv(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/sonic/forest_proto4.png" style="width:100%" onclick="currentDiv(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/sonic/lobby1.png" style="width:100%" onclick="currentDiv(4)">
+                </div>
+            </div>
+        </div>
+        <p>Gamersafer reached out to me to help lead a design effort for a limited-time Sonic racing event in Minecraft to promote the Sonic the Hedgehog 3 movie. The goal was to create 3 unique tracks inspired by the environments of the Sonic 3 movie with each race lasting 2-3 minutes. The event would offer a story mode filled with cutscenes and characters racing alongside the player as well as a multiplayer mode that would let users race each other. With the movie coming out in December 2024, we only had 3 weeks before to create the racing game in time.</p>
+    </div>
+    <div id="early-design">
+        <h2>Early Design</h2>
+        <p>With the original proposal approved, we had to actually determine one of the most important parts of the racing game which is how the movement is actually going to work. Minecraft has very limited options in regards to movement mechanics that can function well in a race. We want the player to have as much control as possible and most importantly, the player should feel as fast as Sonic. Rather than using boats on ice which are difficult to steer, or horses which can be buggy in a multiplayer environment, we opted with the simplest method which was just normal walking. We can apply a high enough speed value which will adjust their FOV, making them feel the speed that they’re going.</p>
+        <img class="description-img" alt="POV on track" src="images/sonic/forest_proto3.png" style="width: 100%"/>            
+        <p>We had to test several values on a prototype track for minimum and maximum speed while also taking into account boost pads and how many coins were needed to allow a player to reach max speed. Other elements like slowing down the player with soul sand or if they can maintain speed on shallow water were included to see how feasible built-in obstacles are to save our developer some time. Slopes were very tricky to maintain consistent speed as a steep slope on slabs would slow you down and it’d require them to be spread out far to stay consistent. We also found out that going downwards would not carry any momentum so we had to create jump pads that sent players at consistent speeds to adjust properly.</p>
+        <img class="description-img" alt="Test track aeriel view" src="images/sonic/test_track.png" style="width: 100%"/>            
+        <p>Due to how fast players will be in the race, the size of each track needed to be massive. We were looking at having players run at about 20 blocks per second so assuming you have a long straightaway section that lasts about 15 seconds, you’d need 300 blocks of space just for that section alone. The forest track was planned to be 1 lap and because it’s just a custom landscape, we could opt to make it large (1250x1250) without needing to dedicate a ton of time due to how easy it is to reuse assets of trees, bushes, rocks, etc. The Tokyo track was planned to be the smallest (500x500) but having the most turns to utilize the tight city grid. The London track would be slightly bigger (750x750) and have plenty of options for routes to explore.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 1 Draft" src="images/sonic/forest_greymap1.png"/>
+            <img class="description-img two-child" alt="Trajectory" src="images/sonic/london_greymap1.png"/>
+        </div>
+        <p>A bunch of ideas had to be axed due to time constraints especially because of our limited dev power having a big focus on implementing custom models. Enemies were an idea for players to have to dodge on the track but that’d require more models and entities and we didn’t want to have players lose coins to disrupt their race as coins would increase your speed over time. Opening up shortcuts on new laps to expand the track had to be cut as the complexity for multiplayer would take a lot of time to complete. Portals to sectioned-off parts of the map like a rooftop section or sewers were also scrapped due to feasibility of maintaining speed through a teleport and checkpoint logic.</p>
+    </div>
+    <div id="creation-process">
+        <h3>Creation Process</h3>
+        <p>The forest track was going to be the first track to be greymapped. I created an initial drawing and overlaid a grid onto it with each square representing a 50x50 area. This allowed me to better understand how far I need each section to go before turning when brushing the path in game. The terrain would be handed off to another builder to greymap while I do tests of the track and consult with our developer on fine tuning movement values and how to set up coins. Because of the consistent client meetings, we had to spend more time on creating polished prototypes. We ended up using WorldPainter to create the terrain around the path to make it look good, yet it also required us to do a lot more touchups for the track afterwards, requiring me to rework a lot of areas and adding temporary obstacles that would end up getting scrapped afterwards.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Hole 1 Draft" src="images/sonic/forest_drawing2.png"/>
+            <img class="description-img two-child" alt="Trajectory" src="images/sonic/forest_greymap11.png"/>
+        </div>
+        <p>Internally, we didn’t have many people on the project to create 3 large scale builds which had us outsource the Tokyo and London track to Coastline Creations. We had them start on the London track immediately and let them come up with a simple track layout which would then get tweaked by myself before they went ahead and started building. I plotted out which roads should be playable and how some should re-connect after splitting.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="London greymap" src="images/sonic/london_drawing1.png"/>
+            <img class="description-img two-child" alt="London prototype with track adjustment changes" src="images/sonic/london_proto1.png"/>
+        </div>
+        <p>While they worked on that, I created a drawing of the Tokyo map and needed the area to be simpler to give them less build constraints with how little time we had left. This track was to follow a simple grid layout with a bunch of roads blocked off by barricades. Similar to the London track, some areas would have multiple split paths that’d reconnect which would end up being a smart tactic for how we’d implement our coins speeding up players. With the grid layout, I was able to make a very small scale greymap that could easily be scaled up with commands to generate the 500x500 region that the build team could be handed off with.</p>
+        <div class="two-pics">
+            <img class="description-img two-child" alt="Tokyo drawing" src="images/sonic/tokyo_drawing2.png"/>
+            <img class="description-img two-child" alt="Tokyo small scale greymap" src="images/sonic/tokyo_layout1.png"/>
+        </div>
+        <p>We were given a bunch of commands to adjust our own speed and create custom jump pad and boost pad regions. One major change we had to make was rather than marking out each coin on the track to pick up, we had them randomly generated on the track which was determined by marking nodes that essentially follow the middle of the path and spawn in a radius around it. For lapped tracks, coins would not regenerate so this would incentivize players to use different paths as they’d have coins that were not previously picked up. Which paths players take first would play a strategic role as the faster you get, the harder it is to avoid obstacles and some paths are more clear than others.</p>
+        <img class="description-img" alt="Tokyo scaled up greymap" src="images/sonic/tokyo_greymap4.png" style="width: 100%"/>            
+        <p>Custom models played a big role in enhancing the Sonic Racing event. We had a modeler from Elite Creations who animated a bunch of Sonic assets for us to use and we purchased normal models that could be used on the tracks like cars and signs to enhance the build in the playable area’s view. Models don’t have hitboxes so I’d have to mark out car locations and fill their model with barrier blocks.</p>    
+    </div>
+    <div id="finished-product">
+        <h2>Finished Product</h2>
+        <p>Everything was completed on time and ready to launch until a tragedy occurred. Microsoft did not want the project to go forward due to reasons which were not shared with the team. A compromise was made in which the event could be released in January, but due to a new Minecraft update, it broke the models for users and required a bunch of fixing and delay before releasing it in February for only a few weeks. The builds turned out fantastic and the gameplay really gave a Sonic feel to it especially with how polished the models and animations were alongside it.</p>
+        <div id="slideshow-container">
+            <img class="mySlides3 fade" id="img0" src="images/sonic/london_render2.png" style="width:100%">
+            <img class="mySlides3 fade" id="img1" src="images/sonic/tokyo_render2.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/sonic/london2.png" style="width:100%">
+            <img class="mySlides3 fade" id="img2" src="images/sonic/forest1.png" style="width:100%">
+            <div class="w3-row-padding w3-section">
+                <div  id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/sonic/london_render2.png" style="width:100%" onclick="currentDiv3(1)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/sonic/tokyo_render2.png" style="width:100%" onclick="currentDiv3(2)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/sonic/london2.png" style="width:100%" onclick="currentDiv3(3)">
+                </div>
+                <div id="indi" class="w3-col s3">
+                    <img class="demo3 w3-opacity w3-hover-opacity-off" src="images/sonic/forest1.png" style="width:100%" onclick="currentDiv3(4)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videos">
+        <h3>Videos</h3>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/4xxeEkTeYdc?si=Ay8Ff_EiydqUkLCl&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <script src="js/slideshow.js"></script>
+    <script src="js/slideshow3.js"></script>
+</body>
+</html>
